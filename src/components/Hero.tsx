@@ -3,6 +3,7 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup.png";
 
 const Hero = () => {
+  
   return (
     <section className="pt-32 pb-20 bg-gradient-to-br from-background to-secondary/50">
       <div className="container mx-auto px-4">
