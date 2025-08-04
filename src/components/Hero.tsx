@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.jpg";
+import heroMockup from "@/assets/hero-mockup.png";
 
 const Hero = () => {
   return (
@@ -36,12 +36,14 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="success" size="lg" className="text-lg px-8 py-4">
-                Sign up for waiting list
+              <Button 
+                variant="success" 
+                size="lg" 
+                className="text-lg px-8 py-4"
+                onClick={() => window.open('https://tally.so/r/w7kXXA', '_self')}
+              >
+                Join Waitlist
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-                See Live Demo
               </Button>
             </div>
           </div>

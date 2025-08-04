@@ -69,10 +69,10 @@ const ProductIntro = () => {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-primary-foreground font-semibold">AK</span>
+                  <span className="text-primary-foreground font-semibold">SL</span>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Alex Kim</p>
+                  <p className="font-semibold text-foreground">Stan</p>
                   <p className="text-muted-foreground">Founder & Lead Developer</p>
                 </div>
               </div>
@@ -82,10 +82,6 @@ const ProductIntro = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Button variant="success" size="lg" className="text-lg px-8 py-4">
-            Try the Demo
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </div>
     </section>

@@ -18,22 +18,19 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-foreground hover:text-primary transition-colors">
               Features
             </a>
-            <a href="#demo" className="text-foreground hover:text-primary transition-colors">
-              Demo
-            </a>
-            <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
-              Pricing
-            </a>
-          </nav>
+          </nav> */}
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="success" size="lg">
+            <Button 
+              variant="success" 
+              size="lg"
+              onClick={() => window.open('https://tally.so/r/w7kXXA', '_self')}
+            >
               Join Waitlist
             </Button>
           </div>
@@ -53,18 +50,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 border-t">
             <nav className="flex flex-col gap-4">
-              <a href="#features" className="text-foreground hover:text-primary transition-colors">
+              {/* <a href="#features" className="text-foreground hover:text-primary transition-colors">
                 Features
-              </a>
-              <a href="#demo" className="text-foreground hover:text-primary transition-colors">
-                Demo
-              </a>
-              <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
-                Pricing
-              </a>
+              </a> */}
               <div className="flex flex-col gap-2 mt-4">
-                <Button variant="ghost" className="justify-start">Sign In</Button>
-                <Button variant="success">Join Waitlist</Button>
+                <Button 
+                  variant="success"
+                  onClick={() => window.open('https://tally.so/r/w7kXXA', '_self')}
+                >
+                  Join Waitlist
+                </Button>
               </div>
             </nav>
           </div>
